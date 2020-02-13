@@ -1,184 +1,196 @@
-<!doctype html>
-<html lang="en">
- <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FHS Student Council</title>
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alata|Racing+Sans+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top .navbar-default">
+      <div class="container">
+        <a class="navbar-brand" href="#">Student Council</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="events.html">Events
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meetings.html">Meetings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="members.html">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<hr>
+<hr>
+    <!-- Page Content -->
+    <section class="py-5">
+      <div class="container">
+        <h1 class="display-4">School Events</h1>
+      </div>
+    </section>
 
-   <!-- Bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="./css/style.css">
- <title>Freehold Student Council</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- </head>
- <style>
- .container {
-   position: relative;
-   width: 50%;
- }
+      <!-- Header -->
+      <header class="bg-light text-center py-5 mb-4">
+        <div class="container">
+          <h1 class="font-weight-light text-dark members">High Honors Brunch</h1>
+          <p>To celebrate their hard work, students who have achieved High Honors during MP1 were invited for a breakfast at the Five Star Cafe.</p>
+        </div>
+      </header>
 
- .image {
-   display: block;
-   width: 100%;
-   height: auto;
- }
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="img/breakfastfood.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="img/group1.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="img/group2.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="img/group3.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- /.row -->
+    <!-- Header -->
+    <header class="bg-light text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="font-weight-light text-dark members">Spirit Week</h1>
+        <p>To hype the student body for the homecoming game and dance, students set out to dress up according to the theme of that day such as Twin Day, 90s, and Pink Out to name a few.</p>
+      </div>
+    </header>
 
- .overlay {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   height: 100%;
-   width: 100%;
-   opacity: 0;
-   transition: .5s ease;
-   background-color: #008CBA;
- }
-
- .container:hover .overlay {
-   opacity: 1;
- }
-
- .text {
-   color: white;
-   font-size: 20px;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -webkit-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
-   text-align: center;
- }
-
- .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
-}
-
-/* customizable snowflake styling */
-.snowflake {
- color: #fff;
- font-size: 1em;
- font-family: Arial, sans-serif;
- text-shadow: 0 0 5px #000;
-}
-
-@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
-</style>
-<div class="snowflakes" aria-hidden="true">
- <div class="snowflake">
- ❅
- </div>
- <div class="snowflake">
- ❆
- </div>
- <div class="snowflake">
- ❅
- </div>
- <div class="snowflake">
- ❆
- </div>
- <div class="snowflake">
- ❅
- </div>
- <div class="snowflake">
- ❆
- </div>
- <div class="snowflake">
-   ❅
- </div>
- <div class="snowflake">
-   ❆
- </div>
- <div class="snowflake">
-   ❅
- </div>
- <div class="snowflake">
-   ❆
- </div>
- <div class="snowflake">
-   ❅
- </div>
- <div class="snowflake">
-   ❆
- </div>
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="img/Event Photos/g1.JPG" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="img/Event Photos/g2.JPG" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <!-- Team Member 3 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="img/Event Photos/g3.JPG" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <!-- Team Member 4 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="img/Event Photos/g4.JPG" class="card-img-top" alt="...">
+      </div>
+    </div>
+  </div>
 </div>
- </style>
- <body>
-   <nav class="navbar navbar-inverse">
-               <div class="navbar-header">
-                   <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-tent"></span> FRHSD</a>
-               </div>
-               <ul class="nav navbar-nav">
-                   <li class="active"><a href="index.html">Home</a></li>
-                   <li><a href="info.html">Meetings</a></li>
-                   <!-- Gather the related links into a dropdown -->
-                   <li class="dropdown">
-                       <a class="dropdown-toggle" href="Carpa.html">
-                         Info
-                       </a>
-                   </li>
-                   <!-- Gather the related links into a dropdown -->
-                   <li class="dropdown">
-                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                         School info
-                           <span class="caret"></span>
-                       </a>
-                       <ul class="dropdown-menu">
-                           <li><a href="#"> Fund Raisers</a></li>
-                           <a href="New.html">News</a>
-                           <li><a href="#">Awards/Achievements </a></li>
-                           <li><a href="Dance.html">School Dance</a></li>
-                       </ul>
-                   </li>
-                     <li class="dropdown">
-                       <a class="dropdown-toggle" href="#">
+  <!-- /.row -->
+  <!-- Header -->
+  <header class="bg-light text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="font-weight-light text-dark members">Homecoming Dance</h1>
+      <p>FHS Homecoming Dance 2019! Theme: A Night in New York City</p>
+    </div>
+  </header>
 
-                        </a>
-                   </li>
-               </ul>
-           </nav>
-       </div>
- <div class="container"  >
- <div class="jumbotron">
- <h1><center>News</center></h1>
- </div>
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="img/Event Photos/group1.JPG" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="img/Event Photos/group2.JPG" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <!-- Team Member 3 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="img/Event Photos/group3.JPG" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <!-- Team Member 4 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="img/Event Photos//group4.JPG" class="card-img-top" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
 
-<img src="./img/school new.jpg" style=" width:900px; height:500px;"">
+<br>
+<br>
+<br>
 
-   <!-- Optional JavaScript -->
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="container text-center ">
+    <div class="row">
+      <div class="col-md">
+        <a href="https://www.frhsd.com/Domain/12"><img src="img/schoollogo.png"></a>
+      </div>
+      <div class="col-md">
+        <p>Posted by: FHS Web Design Program</p>
+         <p>Contact information: <a href="cvanpatten@frhsd.com">
+         cvanpatten@frhsd.com</a>.</p>
+         <p>Phone Number: 732-431-8360</p>
+         <p>Address: 2 Robertsville Rd, Freehold, NJ 07728</p>
+      </div>
+     </div>
+  </div>
+</footer>
+    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<h1><p><center>Senior of the week</center></p></h1>
-<img src="./img/our-students.jpg" style="width=:400px; height:200px;">
-
-<img src="./img/Thrive-During-Finals-.jpg" style="width=:900px; height:200px;" align="right">
-
-<h1><p><center>Junior of the week</center></p></h1>
-<img src="./img/download.jpg" style="width=:400px; height:200px;">
-
-<img src="./img/student-3500990_960_720.jpg" style="width:400px; height=:40px;" align="right">
-<h1><p><center>Sophomore of the week</center></p></h1>
-<img src="./img/our-students.jpg" style="width=:400px; height:200px;">
-
-<img src="./img/Thrive-During-Finals-.jpg" style="width=:900px; height:200px;" align="right">
-
-<h1><p><center>Freshman of the week</center></p></h1>
-<img src="./img/our-students.jpg" style="width=:400px; height:200px;">
-
-<img src="./img/Thrive-During-Finals-.jpg" style="width=:900px; height:200px;" align="right">
+  </body>
 </html>
